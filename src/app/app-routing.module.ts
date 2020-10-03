@@ -1,10 +1,9 @@
-import { componentFactoryName } from '@angular/compiler';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { combineLatest } from 'rxjs';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PostsListComponent } from './posts-list/posts-list.component';
 
 const routes: Routes = [
 
@@ -15,6 +14,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'posts',
+    component: PostsListComponent
   },
   {
     path: '**',
